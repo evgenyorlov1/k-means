@@ -89,4 +89,6 @@ def parse_options():
 options = parse_options()
 data = load(options.filename)
 data = k_means(data, options.clusters)
-plot_report(data, options.clusters)
+#plot_report(data, options.clusters)
+for el in data:
+    print el
